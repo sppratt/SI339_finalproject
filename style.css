@@ -1,0 +1,97 @@
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus {
+    top: 20px;
+}
+
+button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #350047;
+    border-color: #350047;
+    background-color: lavender;
+}
+
+
+body{
+    background-color: #e5bafb;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    .skip a{
+        -webkit-transition: none; /* sets to default setting */
+        transition: none;        /* sets to default setting */
+        }
+
+}
+nav {
+    text-align: center;
+    padding: 25px;
+    background-color: lavender;
+}
+nav li {
+    display: inline;
+}
+nav a{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    color: #350047;
+    /* border: 2px solid rgb(53, 0, 71); */
+    text-decoration: none;
+}
+
+.current a{
+    border: 3px solid #350047;
+    background-color: #350047;
+    color: lavender;
+    
+}
+
+nav a:hover, nav a:focus {
+    border: 3px dotted rgb(53, 0, 71);
+}
+
+h1{
+    color: #350047;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    color: rgb(53, 0, 71);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media only screen and (min-width: 600px) {
+    nav a{
+        margin: 50px;
+    }
+
+    h1 {
+        padding: 30px;
+        font-size: 150%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    nav a{
+        margin: 100px;
+    }
+    h1 {
+        padding: 40px;
+        font-size: 180%;
+    }
+}
+
+
